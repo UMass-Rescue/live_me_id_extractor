@@ -104,7 +104,7 @@ def search_best_detail_enhancer(im, func, minimum_length=3, tolerance=4):
     return Counter(all_predictions).most_common()[0][0]
 
 def search_user_id(im:np.ndarray, abandon_search_length: int = 6, minimum_string_length: int = 3, 
-                  advanced: str = False):
+                  advanced: bool = False):
     boxes = find_text(im, boxes_only=True)
     weight = len(boxes)
     final_detected = []
