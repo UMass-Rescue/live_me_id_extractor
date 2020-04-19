@@ -10,7 +10,7 @@ This module is suitable for detecting live_me id across screenshots captured fro
 
 Parameters Invoked | Default Argument | Description
 --- | --- | ----
-im | **Required** | Required image variable of type np.ndarray
+im | **Required** | Required image variable of type np.ndarray or image path
 abandon_search_length | 6 | If it finds alphabetic string above this length, it drops the edge enhancement search and moves to the next box.
 minimum_string_length | 3 | The numeric string detected has to be of minimum length of 3 to avoid ambiguity with other numbers on the screen. Can be tuned further with a better understanding of the data.
 advanced | False | If turned on, it performs detail enhancement based configurability search. Can be tuned further with a better understanding of the data.
